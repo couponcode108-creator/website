@@ -1,0 +1,22 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+console.log('App is starting...');
+
+try {
+  const rootElement = document.getElementById('root');
+  if (!rootElement) throw new Error('Root element not found');
+  
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+  console.log('Render call completed');
+} catch (error) {
+  console.error('Failed to render App:', error);
+  document.body.innerHTML = `<div style="color: white; padding: 20px; background: red;"><h1>Render Error</h1><pre>${error.message}</pre></div>`;
+}
