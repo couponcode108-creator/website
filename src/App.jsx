@@ -104,9 +104,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(255, 215, 0, 0.1)', borderRadius: '100px', color: 'var(--accent-color)', fontSize: '14px', fontWeight: 600, marginBottom: '24px' }}>
-              <MapPin size={16} /> Launching soon in Surat, India
-            </div>
+
             <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.1, marginBottom: '24px' }}>
               Unlock the City with <br />
               <span className="gradient-text">One Exclusive App</span>
