@@ -108,10 +108,10 @@ export default function App() {
             </div>
             <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1.1, marginBottom: '24px' }}>
               Unlock the City with <br />
-              <span className="gradient-text">One Exclusive Book</span>
+              <span className="gradient-text">One Exclusive App</span>
             </h1>
             <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', marginBottom: '40px', maxWidth: '600px' }}>
-              Pay just <span style={{ color: '#fff', fontWeight: 600 }}>₹1000</span> for a book valid for <span style={{ color: '#fff', fontWeight: 600 }}>50 days</span>. Access deals at Surat's finest restaurants, salons, and theaters.
+              Pay just <span style={{ color: '#fff', fontWeight: 600 }}>₹1000</span> for the app access valid for <span style={{ color: '#fff', fontWeight: 600 }}>50 days</span>. Access deals at Surat's finest restaurants, salons, and theaters.
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '12px', background: 'var(--glass-bg)', padding: '8px', borderRadius: '16px', border: '1px solid var(--glass-border)', maxWidth: '500px' }}>
@@ -149,7 +149,7 @@ export default function App() {
             style={{ position: 'relative' }}
           >
             <div className="glass-card" style={{ padding: '0', overflow: 'hidden', width: '100%', aspectRatio: '4/5', boxShadow: '0 40px 80px rgba(0,0,0,0.5)' }}>
-               <img src="/premium_coupon_book_mockup.png" alt="Premium Coupon Book" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+               <img src="/coupon_app_mockup.png" alt="Premium Coupon App" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
           </motion.div>
         </div>
@@ -204,7 +204,7 @@ export default function App() {
             <Twitter size={24} />
             <Mail size={24} />
           </div>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>© 2026 CouponCode Platforms Pvt Ltd.</p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>Powered by CouponCode</p>
         </div>
       </footer>
     </div>
