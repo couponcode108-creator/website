@@ -17,7 +17,8 @@ import {
   Twitter,
   Linkedin,
   Mail,
-  Smartphone
+  Smartphone,
+  User
 } from 'lucide-react';
 import './index.css';
 // rebuild trigger
@@ -193,6 +194,37 @@ export default function App() {
               <span>- ₹750</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section style={{ background: 'rgba(255,255,255,0.02)' }}>
+        <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }}
+          >
+            <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'var(--primary-gradient)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(255, 140, 0, 0.3)' }}>
+              <User size={48} color="#000" />
+            </div>
+            <div>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '8px', letterSpacing: '1px' }}>
+                SIDDHARTH HARESHBHAI DHOLAKIYA
+              </h2>
+              <p style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '2px' }}>
+                Founder & Visionary
+              </p>
+            </div>
+            <div style={{ position: 'relative', padding: '0 20px' }}>
+              <span style={{ position: 'absolute', top: '-20px', left: '0', fontSize: '60px', opacity: 0.1, fontFamily: 'serif' }}>"</span>
+              <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', lineHeight: 1.6, fontStyle: 'italic' }}>
+                Our vision is to bridge the gap between luxury and affordability for every resident of Surat. We are building a lifestyle community where excellence is accessible to all, one exclusive experience at a time.
+              </p>
+              <span style={{ position: 'absolute', bottom: '-40px', right: '0', fontSize: '60px', opacity: 0.1, fontFamily: 'serif', transform: 'rotate(180deg)' }}>"</span>
+            </div>
+          </motion.div>
         </div>
       </section>
 
